@@ -5,7 +5,7 @@ function PageHome() {
   return (
     <>
       <div>
-        <p>When I grow up, I'll actually have content that doesn't suck.</p>
+        <p>When I grow up, I'll actually have content that doesn't suck. It may be a while.</p>
       </div>
     </>
   )
