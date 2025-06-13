@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import MainTemplate from './routes/_mainTemplate/MainTemplate.jsx'
-import App from './routes/home/PageHome.jsx'
+import PageHome from './routes/home/PageHome.jsx'
 import PageError from './routes/error/PageError.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <App />,
+        element: <PageHome />,
       },
     ]
   },
