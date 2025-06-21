@@ -13,8 +13,8 @@ function PageHome() {
           <li><strong>Tech:</strong> Mac Mini M4, 16GB RAM, 256GB SSD, dock w/ extra HDMI and ports</li>
           <li><strong>Cat:</strong> our boy cat, 10/10 points (our girl cat still has too much kitten in her, 6/10 points)</li>
           <li><strong>Pen:</strong> tough one...gotta say my Pilot Decimo is leading the pack at the moment</li>
-          <li><strong>Ink:</strong> Pilot/Nakimi Black. Best workhorse ink evah. Fight me.</li>
-          <li><strong>Beer:</strong> Icicle Cheat Code from Leavenworth, WA which is not available anywhere near me</li>
+          <li><strong>Ink:</strong> Pilot/Namiki Black. Best workhorse ink evah. Fight me.</li>
+          <li><strong>Beer:</strong> Icicle Cheat Code from Leavenworth, WA, which is not available anywhere near me</li>
           <li><strong>NSAID:</strong> aspirin</li>
           <li><strong>Martini:</strong> dirty</li>
           <li><strong>Programming language:</strong> AWK (shut up)</li>
