@@ -9,7 +9,7 @@ function PageHome() {
 
         <ul>
           <li><strong>Food:</strong> unsalted dry roasted peanuts (in the shell, natch)</li>
-          <li><strong>Music:</strong> the Mercy Street CD by A Reminiscent Drive</li>
+          <li><strong>Music:</strong> Mercy Street CD by A Reminiscent Drive</li>
           <li><strong>Tech:</strong> Mac Mini M4, 16GB RAM, 256GB SSD, dock w/ extra HDMI and ports</li>
           <li><strong>Cat:</strong> our boy cat, 10/10 points (our girl cat still has too much kitten in her, 6/10 points)</li>
           <li><strong>Pen:</strong> tough one...gotta say my Pilot Decimo is leading the pack at the moment</li>
@@ -19,6 +19,7 @@ function PageHome() {
           <li><strong>Martini:</strong> dirty</li>
           <li><strong>Programming language:</strong> AWK (shut up)</li>
           <li><strong>Ereader:</strong> hardware: Kindle, everything else: Kobo</li>
+          <li><strong>Ham radio band:</strong> 10m, although it's been sucking lately</li>
         </ul>
       </div>
     </>
