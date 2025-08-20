@@ -14,12 +14,14 @@ function PageHome() {
           <li><strong>Cat:</strong> our boy cat, 10/10 points (our girl cat still has too much kitten in her, 6/10 points)</li>
           <li><strong>Pen:</strong> tough one...gotta say my Pilot Decimo is leading the pack at the moment</li>
           <li><strong>Ink:</strong> Pilot/Namiki Black. Best workhorse ink evah. Fight me.</li>
-          <li><strong>Beer:</strong> Icicle Cheat Code from Leavenworth, WA, which is not available anywhere near me</li>
+          <li><strong>Normal Beer:</strong> Icicle Cheat Code from Leavenworth, WA, which is not available anywhere near me</li>
+          <li><strong>Light Beer:</strong> Currently evaluating Miller Lite. Did Coors Light before. Bud Light is next.</li>
           <li><strong>NSAID:</strong> aspirin</li>
           <li><strong>Martini:</strong> dirty</li>
           <li><strong>Programming language:</strong> AWK (shut up)</li>
           <li><strong>Ereader:</strong> hardware: Kindle, everything else: Kobo</li>
           <li><strong>Ham radio band:</strong> 10m, although it's been sucking lately</li>
+          <li><strong>CSS Framework:</strong> CSS Grid, because it's built-in and it rocks my Pickle Rick socks</li>
         </ul>
       </div>
     </>
