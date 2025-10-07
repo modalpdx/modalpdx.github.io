@@ -11,14 +11,15 @@ function PageHome() {
           <li><strong>Food:</strong> unsalted dry roasted peanuts (in the shell, natch)</li>
           <li><strong>Music:</strong> Mercy Street CD by A Reminiscent Drive</li>
           <li><strong>Tech:</strong> Mac Mini M4, 16GB RAM, 256GB SSD, dock w/ extra HDMI/ports/1TB M.2 drive</li>
+          <li><strong>Screen saver:</strong> The retro Macintosh pixelated UI screensaver. Holy crap, I could watch it all day.</li>
           <li><strong>Cat:</strong> our boy cat, 10/10 points (our girl cat still has too much kitten in her, 6/10 points)</li>
           <li><strong>Pen:</strong> tough one...gotta say my Pilot Decimo is leading the pack at the moment</li>
           <li><strong>Ink:</strong> Pilot/Namiki Black. Best workhorse ink evah. Fight me.</li>
           <li><strong>Normal Beer:</strong> Icicle Cheat Code from Leavenworth, WA, which is not available anywhere near me</li>
-          <li><strong>Light Beer:</strong> Currently evaluating Miller Lite. Did Coors Light before. Bud Light is next.</li>
+          <li><strong>Light Beer:</strong> Currently evaluating Michelob Ultra. Not lovin' it. Bud Light is the best so far.</li>
           <li><strong>NSAID:</strong> aspirin</li>
           <li><strong>Martini:</strong> dirty</li>
-          <li><strong>Programming language:</strong> AWK (shut up)</li>
+          <li><strong>Programming language:</strong> AWK (shut up). Warming up to Swift.</li>
           <li><strong>Ereader:</strong> hardware: Kindle, everything else: Kobo</li>
           <li><strong>Ham radio band:</strong> 10m, although it's been sucking lately</li>
           <li><strong>CSS Framework:</strong> CSS Grid, because it's built-in and it rocks my Pickle Rick socks</li>
