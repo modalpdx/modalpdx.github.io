@@ -10,7 +10,8 @@ function PageHome() {
         <ul>
           <li><strong>Food:</strong> unsalted dry roasted peanuts (in the shell, natch)</li>
           <li><strong>Music:</strong> Mercy Street CD by A Reminiscent Drive</li>
-          <li><strong>Tech:</strong> Mac Mini M4, 16GB RAM, 256GB SSD, dock w/ extra HDMI/ports/1TB M.2 drive</li>
+          <li><strong>Tech:</strong> M4 Mac Mini M4 w/ 16GB RAM and 256GB SSD (extra 1TB in a dock); M4 MacBook Air w/ 16GB RAM and 256GB SSD</li>
+          <li><strong>Digital art:</strong> Pixels (Pixen, Aseprite, may need to learn GIMP for work)</li>
           <li><strong>Screen saver:</strong> The retro Macintosh pixelated UI screensaver. Holy crap, I could watch it all day.</li>
           <li><strong>Cat:</strong> our boy cat, 10/10 points (our girl cat still has too much kitten in her, 6/10 points)</li>
           <li><strong>Pen:</strong> tough one...gotta say my Pilot Decimo is leading the pack at the moment</li>
