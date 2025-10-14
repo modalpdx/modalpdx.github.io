@@ -2,7 +2,7 @@
   "name": "hummus",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://modalpdx.github.io",
+  "homepage": "https://modalpdx.github.io/#",
   "type": "module",
   "scripts": {
     "dev": "vite",
