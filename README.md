@@ -6,11 +6,12 @@ To publish, first `npm run build`, then `npm run deploy`.
 
 This prevents needing to set up a posts API. It also prevents saving anything from the site (no comments on posts, for example). The less connections deployed to the web, the better.
 
-This script is MariaDB (possibly MySQL?) specific. Of course, swap DB_* with actual values for the database. The JSON should be written to public/posts.json in the source tree before building/deploying the site. 
+This script is MariaDB (possibly MySQL?) specific. Of course, swap DB_* with actual values for the database. The JSON should be written to public/posts.json in the source tree before building/deploying the site. Note: the "--raw" parameter is vital (without
+it, escaped characters like newlines and double quotes would be double-escaped).
 
 ```
 ssh DB_SERVER_USERNAME@DB_SERVER_IP '
-    mysql -u DB_USER -p"DB_PASSWORD" -D simpleblog -N -e "
+    mysql -u DB_USER -p -D simpleblog -N --raw -e "
         select JSON_ARRAYAGG(
             JSON_OBJECT(
                 \"id\", id,
@@ -22,8 +23,8 @@ ssh DB_SERVER_USERNAME@DB_SERVER_IP '
                 \"created_at\", created_at,
                 \"updated_at\", updated_at
             )
-        )
-        from posts
+	    order by created_at desc
+        ) from posts
     "
 '
 ```
