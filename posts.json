@@ -1,1 +1,32 @@
-[{"id": 1, "slug": "My Newest NEW Slug", "title": "mytitle", "summary": "this sums up everything", "content_md": "### SO MUCH TO READ", "published": 1, "created_at": "2025-10-13 15:33:24", "updated_at": "2025-10-13 15:34:05"},{"id": 2, "slug": "new-post", "title": "New Post", "summary": "This is a summary of the new post.", "content_md": "_This is the content of the new post._\\n/This post was created using **Markdown** formatting./\\n", "published": 1, "created_at": "2025-10-13 20:47:30", "updated_at": "2025-10-13 20:47:30"},{"id": 4, "slug": "Thoughts on pre-fetching data", "title": "Posts without a database", "summary": "How to have a website with posts but not have to connect it to a database", "content_md": "I'm trying to add a page to my Github Pages site that shows \\"posts\\". I have some pretty strange criteria:\\n\\n- no database on the web ($$, configuation, etc...forget it)\\n- post content must support markdown (no HTML in database tables)\\n\\nThere seems to be one general way to handle this: local database, all posts in the database are pre-fetched and added to the React site somehow so they can be used to generate the \\"posts\\" page.\\n\\n### Pre-fetching?\\n\\nPre-fetching is key here. That's where the database is queried up front to collect data, and then the data is stored in the site\\ncode where JavaScript can see it and process it when the site renders. \\n\\nIf the posts are in a file in /public, they should be seen by the React code. I can then grab the file,\\nread its contents, and loop through the items to build all of the posts. The react-markdown component appears to handle rendering\\njust fine, so that leaves the actual pre-fetching.\\n\\nMariaDB supports rendering results as JSON. The mysql command line utility can connect to a remote database (it's inside my house, but not on the machine that's building/deploying the React site). Put the two together and you can query and render to JSON all on\\none command line. \\n\\n### What about security?\\n\\nWhat about it? I'm not sure security is much of an issue if there is no database being contacted, no comment forms to enter data,\\nno DOS attack vectors that will drive up cloud database costs, etc. It's a static site with static data. I'm going to look into it,\\nbut I doubt I'll find anything that absolutely requires hand wringing.\\n\\n### SHIP IT\\n\\nWorking on it.", "published": 1, "created_at": "2025-10-14 19:45:43", "updated_at": "2025-10-14 19:45:43"}]
+[
+    {
+        "id": 1,
+        "slug": "My Newest NEW Slug",
+        "title": "mytitle",
+        "summary": "this sums up everything",
+        "content_md": "### SO MUCH TO READ",
+        "published": 1,
+        "created_at": "2025-10-13 15:33:24",
+        "updated_at": "2025-10-13 15:34:05"
+    },
+    {
+        "id": 2,
+        "slug": "new-post",
+        "title": "New Post",
+        "summary": "This is a summary of the new post.",
+        "content_md": "_This is the content of the new post._\n/This post was created using **Markdown** formatting./\n",
+        "published": 1,
+        "created_at": "2025-10-13 20:47:30",
+        "updated_at": "2025-10-13 20:47:30"
+    },
+    {
+        "id": 4,
+        "slug": "Thoughts on pre-fetching data",
+        "title": "Posts without a database",
+        "summary": "How to have a website with posts but not have to connect it to a database",
+        "content_md": "I'm trying to add a page to my Github Pages site that shows \"posts\". I have some pretty strange criteria:\n\n- no database on the web ($$, configuation, etc...forget it)\\n- post content must support markdown (no HTML in database tables)\n\nThere seems to be one general way to handle this: local database, all posts in the database are pre-fetched and added to the React site somehow so they can be used to generate the \"posts\" page.\n\n### Pre-fetching?\n\nPre-fetching is key here. That's where the database is queried up front to collect data, and then the data is stored in the site\ncode where JavaScript can see it and process it when the site renders. \n\nIf the posts are in a file in /public, they should be seen by the React code. I can then grab the file,\nread its contents, and loop through the items to build all of the posts. The react-markdown component appears to handle rendering\njust fine, so that leaves the actual pre-fetching.\n\nMariaDB supports rendering results as JSON. The mysql command line utility can connect to a remote database (it's inside my house, but not on the machine that's building/deploying the React site). Put the two together and you can query and render to JSON all on\\none command line. \n\n### What about security?\n\nWhat about it? I'm not sure security is much of an issue if there is no database being contacted, no comment forms to enter data,\nno DOS attack vectors that will drive up cloud database costs, etc. It's a static site with static data. I'm going to look into it,\nbut I doubt I'll find anything that absolutely requires hand wringing.\n\n### SHIP IT\n\nWorking on it.",
+        "published": 1,
+        "created_at": "2025-10-14 19:45:43",
+        "updated_at": "2025-10-14 19:45:43"
+    }
+]
