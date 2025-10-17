@@ -1,3 +1,9 @@
 h1 {
     color: rgb(47, 255, 54);
+    font-size: 35pt;
+}
+
+.page-title {
+  color: hotpink;
+  border-bottom: 1px solid dimgray;
 }
