@@ -28,3 +28,8 @@ article header p {
 article section {
   grid-column: 2 / 3;
 }
+
+article th:nth-child(n+2), 
+article td:nth-child(n+2) {
+  padding-left: 10px;
+}

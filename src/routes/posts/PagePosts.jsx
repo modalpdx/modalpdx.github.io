@@ -1,4 +1,5 @@
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { useLoaderData } from "react-router";
 import './css/PagePosts.css';
 
@@ -14,7 +15,7 @@ const PagePosts = () => {
                     <p>{post.created_at}</p>
                 </header>
                 <section>
-                <ReactMarkdown>{post.content_md}</ReactMarkdown>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content_md}</ReactMarkdown>
                 </section>
             </article>
         );
