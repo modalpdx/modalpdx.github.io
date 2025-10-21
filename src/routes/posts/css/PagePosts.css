@@ -29,6 +29,13 @@ article section {
   grid-column: 2 / 3;
 }
 
+article blockquote {
+  border-left: 4px solid #404040;
+  margin-left: 0;
+  padding-left: 10px;
+  color: #c86baa;
+}
+
 article th:nth-child(n+2), 
 article td:nth-child(n+2) {
   padding-left: 10px;
