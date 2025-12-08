@@ -29,6 +29,10 @@ ssh DB_SERVER_USERNAME@DB_SERVER_IP '
 '
 ```
 
+## Other
+
+See the [Simple Blog Post API](https://github.com/modalpdx/simpleblogpostapi) for a simple JavaScript API that will run locally and provide CRUD for the blog post database.
+
 ## TODO
 
 ### Format posts
