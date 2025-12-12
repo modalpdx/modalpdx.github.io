@@ -47,7 +47,6 @@ const PagePosts = () => {
 
     return (
         <>
-            <h2 className='page-title'>Posts Page</h2>
             <div className="posts-container">
                 {latestPost && <FeaturedPost post={latestPost} />}
                 

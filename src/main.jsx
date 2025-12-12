@@ -2,9 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import MainTemplate from './routes/_mainTemplate/MainTemplate.jsx'
-import PageHome from './routes/home/PageHome.jsx'
 import PagePosts from './routes/posts/PagePosts.jsx'
 import { pagePostsLoader } from './routes/posts/js/PagePostsHelpers.js'
+import PagePostPage from './routes/postpage/PagePostPage.jsx'
+import { pagePostPageLoader } from './routes/postpage/js/PagePostPageHelpers.js'
 import PageError from './routes/error/PageError.jsx'
 import { createHashRouter, RouterProvider } from 'react-router'
 
@@ -19,12 +20,13 @@ const router = createHashRouter([
     children: [
       {
         index: true,
-        element: <PageHome />,
-      },
-      {
-        path: "posts",
         element: <PagePosts />,
         loader: pagePostsLoader,
+      },
+      {
+        path: "post/:slug",
+        element: <PagePostPage />,
+        loader: pagePostPageLoader,
       },
     ]
   },

@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 header {
-    background-color: #1a1a1a;
-    grid-column: 2 / -2 !important;
+    background: linear-gradient(to right, 
+        transparent 0px, 
+        rgba(31, 31, 31, 1) 300px, 
+        rgba(31, 31, 31, 1) calc(100% - 300px), 
+        transparent 100%);
+    grid-column: 1 / -1 !important;
     padding: 20px 0;
     display: grid;
     grid-template-columns: subgrid;
+    width: auto;
+    margin: 0 auto;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    grid-column: 1 / -1;
+    display: block;
+}
+
+header a:hover {
+    opacity: 0.8;
 }
 
 h1 {
@@ -14,7 +31,6 @@ h1 {
     font-weight: 200;
     text-align: center;
     margin: 0;
-    grid-column: 1 / -1;
 }
 
 h1 .site-name {
@@ -28,7 +44,7 @@ h1 .site-tagline {
     display: block;
     color: #888;
     font-size: 0.35em;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     margin-top: 5px;
     text-transform: lowercase;
 }
@@ -36,4 +52,8 @@ h1 .site-tagline {
 .page-title {
   color: hotpink;
   border-bottom: 1px solid dimgray;
+}
+
+footer {
+  color: rgb(100, 100, 100);
 }
