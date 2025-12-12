@@ -9,12 +9,18 @@ const PagePostPage = () => {
     return (
         <>
             <div className="post-page-container">
+
+
+
+
+
                 <img 
-                    src="https://placehold.co/1000x600" 
+                    src={post.image_lg_url || "https://placehold.co/1000x600"} 
+                   // src="https://placehold.co/1000x600" 
                     alt={post.title} 
                     className="post-page-image"
                 />
-                <h1 className="post-page-title">{post.title}</h1>
+                <h2 className="post-page-title">{post.title}</h2>
                 <p className="post-page-date">{post.created_at}</p>
                 <div className="post-page-content">
                     <ReactMarkdown remarkPlugins={[remarkGfm]}>

@@ -46,7 +46,10 @@
   margin-bottom: 0.5em;
 }
 
-.post-page-content h3 {
+.post-page-content h3,
+.post-page-content h4,
+.post-page-content h5,
+.post-page-content h6 {
   color: #fff;
 }
 

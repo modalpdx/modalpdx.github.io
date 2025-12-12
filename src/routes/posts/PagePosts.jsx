@@ -14,7 +14,7 @@ const PagePosts = () => {
         return (
             <div className="featured-post">
                 <Link to={`/post/${post.slug}`}>
-                    <img src="https://placehold.co/500x300" alt={post.title} />
+                    <img src={post.image_lg_url || "https://placehold.co/500x300"} alt={post.title} />
                 </Link>
                 <Link to={`/post/${post.slug}`}>
                     <h2>{post.title}</h2>
@@ -29,7 +29,7 @@ const PagePosts = () => {
         return (
             <div className="older-post">
                 <Link to={`/post/${post.slug}`}>
-                    <img src="https://placehold.co/250x175" alt={post.title} />
+                    <img src={post.image_sm_url || "https://placehold.co/250x175"} alt={post.title} />
                 </Link>
                 <Link to={`/post/${post.slug}`}>
                     <h3>{post.title}</h3>
