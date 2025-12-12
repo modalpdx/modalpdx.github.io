@@ -5,7 +5,10 @@ const MainTemplate = () => {
   return (
     <>
       <header>
-        <h1>Humm.us is not for sale.</h1>
+        <h1>
+          <span className="site-name">Humm.us</span>
+          <span className="site-tagline">Is Not For Sale</span>
+        </h1>
       </header>
       <div id="content">
         <Outlet />
