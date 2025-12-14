@@ -9,11 +9,6 @@ const PagePostPage = () => {
     return (
         <>
             <div className="post-page-container">
-
-
-
-
-
                 <img 
                     src={post.image_lg_url || "https://placehold.co/1000x600"} 
                    // src="https://placehold.co/1000x600" 
