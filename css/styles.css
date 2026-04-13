@@ -1,0 +1,489 @@
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: #666;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+h1, h2 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    z-index: 100;
+
+    display: grid;
+    grid-template-columns: 20% 20% 40% 20%;
+    border-bottom: 1px solid #ddd;
+}
+
+.arrow {
+  border: solid #000;
+  border-width: 0 0.2rem 0.2rem 0;
+  display: inline-block;
+  padding: 0.2rem;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+#header-col1 {
+    background-color: #eee;
+}
+
+#header-col2 {
+    background-color: #ddd;
+}
+
+#header-col2:hover {
+    cursor: pointer;
+}
+
+#header-col4 {
+    grid-column: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#weather-widget {
+    display: grid;
+    grid-template:
+        "icon temp time"  auto
+        "icon label label" auto
+        / auto auto 1fr;
+    column-gap: 0.6rem;
+    row-gap: 0.1rem;
+    align-items: center;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    padding: 0;
+    margin-right: 0.8rem;
+}
+
+#weather-icon  { grid-area: icon;  font-size: 2rem; line-height: 1; }
+#weather-temp  { grid-area: temp;  color: #555; }
+#weather-time  { grid-area: time;  color: #555; }
+#weather-label { grid-area: label; font-size: 0.9rem; color: #aaa; }
+
+header div {
+    padding: 1rem;
+}
+
+#header-col1 a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    height: 100%;
+}
+
+#header-col1 a:hover {
+    color: #900;
+}
+
+header ul {
+    display: none;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    position: absolute;
+    top: 5rem;
+    left: 20%;
+    width: 20%;
+}
+
+header li {
+    padding: 1rem;
+    background-color: #ccc
+}
+
+header li:hover {
+    background-color: #bbb;
+    color: #000;
+}
+
+#content {
+    position: fixed;
+    top: 5rem;
+    bottom: 10rem;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#content-nav {
+    padding: 1rem;
+}
+
+#content-nav a {
+    text-decoration: none;
+}
+
+#content-nav h1 {
+    margin-top: 3rem;
+}
+
+@keyframes float-left {
+    0%, 100% { transform: translateX(0); }
+    50%       { transform: translateX(1rem); }
+}
+
+#content ul {
+    padding-right: 5rem;
+}
+
+#nav-prompt-arrow {
+    display: inline-flex;
+    align-items: center;
+    animation: float-left 1.2s ease-in-out infinite;
+    vertical-align: 8%;
+}
+
+#nav-prompt-arrow .arrow-line {
+    display: inline-block;
+    width: 2rem;
+    height: 0.1rem;
+    background-color: #888;
+    vertical-align: middle;
+}
+
+#nav-prompt-arrow .arrow {
+    border-color: #888;
+    vertical-align: middle;
+    margin-right: -0.4rem;
+}
+
+.loaded #nav-prompt-arrow {
+    display: none;
+}
+
+
+#content-content {
+    background-color: #eee;
+    padding: 1rem 0 1rem 1rem;
+    overflow-y: auto;
+    position: relative;
+}
+
+#content-content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/postmodern-image3.png');
+    background-repeat: repeat;
+    background-position: -0.1rem -1.1rem;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+#content-content.loaded::before {
+    display: none;
+}
+
+#post-prompt {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border: 1px solid #ddd;
+    color: #888;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: #fff;
+    white-space: nowrap;
+}
+
+#content-content.loaded #post-prompt {
+    display: none;
+}
+
+#font-size-control {
+    position: sticky;
+    top: 0;
+    float: right;
+    text-align: right;
+    margin-right: 15px;
+    background-color: #eee;
+    line-height: 1;
+    user-select: none;
+    z-index: 999;
+}
+
+#font-size-control .font-size-sm {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #bbb;
+    margin-right: 0.6rem;
+    vertical-align: baseline;
+}
+
+#font-size-control .font-size-lg {
+    font-size: 1.9rem;
+    cursor: pointer;
+    color: #bbb;
+    vertical-align: baseline;
+}
+
+#font-size-control .font-size-sm.current,
+#font-size-control .font-size-lg.current {
+    color: #777;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10rem;
+    z-index: 100;
+    font-size: 1.2rem;
+    line-height: 1.4;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #ddd;
+}
+
+footer div {
+    padding: 1rem;
+}
+
+footer ul {
+    padding-left: 0;
+    margin-top: 0.8rem;
+    list-style: none;
+}
+
+footer p,
+footer ul li,
+footer ul li a {
+    color: #888;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 0.8rem;
+}
+
+footer ul li a:hover {
+    color: #900;
+}
+
+#footer-col2 {
+    border: solid #ddd;
+    border-width: 0 1px 0 1px;
+}
+
+.post-title {
+    margin: 2rem 0 2rem 0;
+}
+
+.post-title h2 {
+    position: relative;
+    color: #999;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 0.3rem 0;
+}
+
+.post-title h2 .arrow {
+    display: none;
+    position: absolute;
+    right: -0.25rem;
+    top: 85%;
+    border-color: #900;
+}
+
+.post-title a:hover h2 {
+    border-bottom-style: solid;
+    border-color: #000;
+    color: #000;
+}
+
+.post-title a.current h2,
+.post-title a.current:hover h2 {
+    border-bottom-style: solid;
+    border-color: #900;
+    color: #900;
+}
+
+.post-title a:hover h2 .arrow {
+    display: block;
+    border-color: #000;
+}
+
+.post-title a.current h2 .arrow,
+.post-title a.current:hover h2 .arrow {
+    display: block;
+    border-color: #900;
+}
+
+.post-title p {
+    color: #999;
+    margin: 0;
+    padding: 0.4rem 0 0 0;
+}
+
+.post-content-body p,
+.post-content-body ul {
+    line-height: 1.4;
+    color: #000;
+}
+
+.post-content-body {
+    width: 65.8%;
+    font-size: 1.2rem;
+}
+
+#content-content.font-lg .post-content-body {
+    font-size: 1.4rem;
+}
+
+.post-content-body h1,
+.post-content-body h2,
+.post-content-body h3,
+.post-content-body h4,
+.post-content-body h5,
+.post-content-body h6 {
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.post-content-body > *:first-child,
+.post-content-body > p:first-of-type,
+.post-content-body > h1:first-of-type {
+    margin-top: 0;
+}
+
+.aside-anchor {
+    position: relative;
+    height: 0;
+}
+
+.aside-anchor aside {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 6rem 1rem 1.5rem;
+    color: #aaa;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* --- About modal --- */
+
+#about-modal {
+    width: 50rem;
+    height: 20rem;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 3rem));
+    margin: 0;
+}
+
+#about-modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#about-modal-inner {
+    display: flex;
+    height: 100%;
+}
+
+#about-modal-left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ddd;
+}
+
+#about-modal-left img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#about-modal-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+}
+
+#about-modal-heading {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+#about-modal-body {
+    color: #888;
+    line-height: 1.4;
+    flex: 1;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+#about-modal-body a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+#about-modal-ok {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+/* --- end About modal --- */
+
+.show {
+    display: block;
+}
