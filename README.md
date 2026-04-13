@@ -1,6 +1,6 @@
 # Humm.us
 
-To publish, first `npm run build`, then `npm run deploy`.
+To publish, simply pushing changes to Github should be enough.
 
 ### Pre-fetch posts from the database and save to a JSON posts file
 
@@ -35,6 +35,4 @@ See the [Simple Blog Post API](https://github.com/modalpdx/simpleblogpostapi) fo
 
 ## TODO
 
-### Format posts
-
-The #/posts page works, but the content is limited and formatting is lame. Do better.
+### Posts that don't suck.
