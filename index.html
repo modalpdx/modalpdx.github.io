@@ -1,111 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>HUMM.US</title>
-        <link rel="stylesheet" href="/css/styles.css" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/hummus-further-optimized-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/hummus-retro-icon.png">
-        <link rel="icon" type="image/png" sizes="48x48" href="/img/hummus-retro-icon.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/hummus-retro-icon.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/img/hummus-retro-icon.png">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.7/purify.min.js" integrity="sha512-78KH17QLT5e55GJqP76vutp1D2iAoy06WcYBXB6iBCsmO6wWzx0Qdg8EDpm8mKXv68BcvHOyeeP4wxAL0twJGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.7/marked.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="text/javascript" src="/js/functions.js"></script>
-    </head>
-    <body>
-        <header>
-            <div id="header-col1">
-                <a href="#"><h1>HUMM.US</h1></a>
-            </div>
-            <div id="header-col2">
-                <h2>MENU</h2>
-                <ul>
-                    <li>Future Expansion</li>
-                    <li>Return of Future Expansion</li>
-                    <li>Son of the Return of Future Expansion</li>
-                    <li id="about-menu-item">About</li>
-                </ul>
-            </div>
-            <div id="header-col4">
-                <div id="weather-widget">
-                    <span id="weather-icon">…</span>
-                    <span id="weather-temp">—°F</span>
-                    <span id="weather-time">—:——</span>
-                    <span id="weather-label">Portland, OR</span>
-                </div>
-            </div>
-        </header>
-        <section id="content">
-            <div id="content-nav">
-                <h1>Mumblings: <span id="nav-prompt-arrow"><span class="arrow left"></span><span class="arrow-line"></span></span></h1>
-            </div>
-            <div id="content-content">
-                <div id="font-size-control">
-                    <span class="font-size-sm">A</span><span class="font-size-lg">A</span>
-                </div>
-                <div id="post-prompt">Select a 'Mumbling'. Be brave.</div>
-                <div id="post-content-area"></div>
-            </div>
-        </section>
-        <footer>
-            <div id="footer-col1">CONTACT
-                <ul>
-                    <li><a href="mailto:erik@erikratcliffe.com?subject=Your%20awesomeness%20frightens%20me.%20Just%20sayin'.">erik@erikratcliffe.com</a></li>
-                    <li><a href="mailto:canyonjam@gmail.com?subject=Stop%20it,%20you're%20making%20the%20rest%20of%20us%20look%20bad.">canyonjam@gmail.com</a></li>
-                </ul>
-            </div>
-            <div id="footer-col2">SOCIAL
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/erik-ratcliffe-2546b24">LinkedIn</a></li>
-                </ul>
-            </div>
-            <div id="footer-col3">INSPIRATIONAL QUOTE
-                <p>"Hey, hon, have you seen my updog?"
-                <br />"I want a divorce."
-                <br />"Not much, what's up with you?"</p>
-            </div>
-        </footer>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HUMM.US</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/hummus-further-optimized-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/hummus-retro-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="/img/hummus-retro-icon.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/hummus-retro-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/img/hummus-retro-icon.png"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.7/purify.min.js"
+      integrity="sha512-78KH17QLT5e55GJqP76vutp1D2iAoy06WcYBXB6iBCsmO6wWzx0Qdg8EDpm8mKXv68BcvHOyeeP4wxAL0twJGQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.7/marked.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="/js/functions.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="header-col1">
+        <a href="#"><h1>HUMM.US</h1></a>
+      </div>
+      <div id="header-col2">
+        <h2>MENU</h2>
+        <ul>
+          <li>Future Expansion</li>
+          <li>Return of Future Expansion</li>
+          <li>Son of the Return of Future Expansion</li>
+          <li id="about-menu-item">About</li>
+        </ul>
+      </div>
+      <div id="header-col4">
+        <div id="weather-widget">
+          <span id="weather-icon">…</span>
+          <span id="weather-temp">—°F</span>
+          <span id="weather-time">—:——</span>
+          <span id="weather-label">Portland, OR</span>
+        </div>
+      </div>
+    </header>
+    <section id="content">
+      <div id="content-nav">
+        <h1>
+          Mumblings:
+          <span id="nav-prompt-arrow"
+            ><span class="arrow left"></span><span class="arrow-line"></span
+          ></span>
+        </h1>
+      </div>
+      <div id="content-content">
+        <div id="font-size-control">
+          <span class="font-size-sm">A</span><span class="font-size-lg">A</span>
+        </div>
+        <div id="post-prompt">Select a 'Mumbling'. Be brave.</div>
+        <div id="post-content-area"></div>
+      </div>
+    </section>
+    <footer>
+      <div id="footer-col1">
+        CONTACT
+        <ul>
+          <li>
+            <a
+              href="mailto:erik@erikratcliffe.com?subject=Your%20awesomeness%20frightens%20me.%20Just%20sayin'."
+              >erik@erikratcliffe.com</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:canyonjam@gmail.com?subject=Stop%20it,%20you're%20making%20the%20rest%20of%20us%20look%20bad."
+              >canyonjam@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="footer-col2">
+        SOCIAL
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/erik-ratcliffe-2546b24"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="footer-col3">
+        NON SEQUITUR
+        <p>
+          "Hey, hon, have you seen my updog?" <br />"I want a divorce."
+          <br />"Not much, what's up with you?"
+        </p>
+      </div>
+    </footer>
 
-        <!-- ABOUT MODAL -->
+    <!-- ABOUT MODAL -->
 
-        <dialog id="about-modal">
-            <div id="about-modal-inner">
-                <div id="about-modal-left">
-                    <img src="/img/hummus-retro-icon.png" alt="HUMM.US" />
-                </div>
-                <div id="about-modal-right">
-                    <h1 id="about-modal-heading">HUMM.US</h1>
-                    <p id="about-modal-body">
-                        Hand-wrought with loving care by Erik Ratcliffe using raw HTML/CSS/JavaScript. (Okay, Claude did some typing.)<br /><br />
-                        <em>Some</em> of the design was inspired by Adi Weintraub. Hate it? Blame me.
-                    </p>
-                    <button id="about-modal-ok">OK</button>
-                </div>
-            </div>
-        </dialog>
+    <dialog id="about-modal">
+      <div id="about-modal-inner">
+        <div id="about-modal-left">
+          <img src="/img/hummus-retro-icon.png" alt="HUMM.US" />
+        </div>
+        <div id="about-modal-right">
+          <h1 id="about-modal-heading">HUMM.US</h1>
+          <p id="about-modal-body">
+            Hand-wrought with loving care by Erik Ratcliffe using raw
+            HTML/CSS/JavaScript. (Okay, Claude did some typing.)<br /><br />
+            <em>Some</em> of the design was inspired by Adi Weintraub. Hate it?
+            Blame me.
+          </p>
+          <button id="about-modal-ok">OK</button>
+        </div>
+      </div>
+    </dialog>
 
-        <!-- TEMPLATES -->
+    <!-- TEMPLATES -->
 
-        <template id="aside-template">
-            <div class="aside-anchor">
-                <aside></aside>
-            </div>
-        </template>
+    <template id="aside-template">
+      <div class="aside-anchor">
+        <aside></aside>
+      </div>
+    </template>
 
-        <template id="post-content-template">
-            <div class="post-content">
-                <div class="post-content-body"></div>
-            </div>
-        </template>
+    <template id="post-content-template">
+      <div class="post-content">
+        <div class="post-content-body"></div>
+      </div>
+    </template>
 
-        <template id="post-title-template">
-            <div class="post-title">
-                <a href="#">
-                    <h2><span class="title">Post Title</span><span class="arrow right"></span></h2>
-                </a><p>Date String</p>
-            </div>
-        </template>
-
-    </body>
+    <template id="post-title-template">
+      <div class="post-title">
+        <a href="#">
+          <h2>
+            <span class="title">Post Title</span
+            ><span class="arrow right"></span>
+          </h2>
+        </a>
+        <p>Date String</p>
+      </div>
+    </template>
+  </body>
 </html>
+
